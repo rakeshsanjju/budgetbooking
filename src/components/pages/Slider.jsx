@@ -3,11 +3,12 @@ import './Slider.css'
 
 const Slider = () => {
   const images = [
-    './mask group.png',
-    './mask group.png',
-    './mask group.png',
-    './mask group.png',
-    './mask group.png'
+    './Mask group.png',
+    './Mask group.png',
+    './Mask group.png',
+    './Mask group.png',
+    './Mask group.png'
+    
   ]
 
   const [currentSlide, setCurrentSlide] = useState(0)
