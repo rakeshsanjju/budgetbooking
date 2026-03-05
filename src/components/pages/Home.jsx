@@ -4,7 +4,7 @@ import Facilitiescard from './Facilitiescard'
 import Homefilter from './Homefilter'
 import HSection4 from './HSection4'
 import HSection5 from './Hsection5'
-import Testimonials from './Testimonials'
+
 import TestimonialsCard from './Testimonialscard'
 import ServicesandHotels from './ServicesandHotels'
 import FAQ from './faq'

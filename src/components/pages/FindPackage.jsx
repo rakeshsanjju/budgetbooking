@@ -3,13 +3,11 @@ import { useState } from 'react'
 
 const FindPackage = () => {
     const [mobileNumber, setMobileNumber] = useState('')
-      const [submitted, setSubmitted] = useState(false)
     
       const handleSubmit = (e) => {
         e.preventDefault()
         if (mobileNumber.trim()) {
           console.log('Mobile Number:', mobileNumber)
-          setSubmitted(true)
           setMobileNumber('')
           setTimeout(() => setSubmitted(false), 3000)
         }
