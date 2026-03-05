@@ -1,0 +1,283 @@
+.testimonials-section {
+  width: 100%;
+  padding: 50px 10px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background-color: #f0e6d8;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff9500;
+}
+
+.testimonial-info {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.testimonial-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  margin: 3px 0 0 0;
+}
+
+.testimonial-rating {
+  margin-bottom: 12px;
+}
+
+.stars {
+  font-size: 14px;
+  color: #ff9500;
+  letter-spacing: 2px;
+}
+
+.testimonial-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+/* ==================== SERVICES SECTION ==================== */
+.services-section {
+  width: 100%;
+  padding: 50px 10px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 280px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==================== TABLET VIEW (480px - 1024px) ==================== */
+@media (max-width: 1024px) {
+  .testimonials-section {
+    padding: 40px 0;
+  }
+
+  .services-section {
+    padding: 40px 0;
+  }
+
+  .testimonials-container {
+    max-width: 100%;
+  }
+
+  .services-container {
+    max-width: 100%;
+  }
+
+  .testimonials-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .services-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .service-card {
+    height: 240px;
+  }
+
+  .testimonial-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-name {
+    font-size: 15px;
+  }
+
+  .testimonial-title {
+    font-size: 11px;
+  }
+
+  .testimonial-text {
+    font-size: 12px;
+  }
+}
+
+/* ==================== MOBILE VIEW (below 480px) ==================== */
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 20px 0;
+    margin-top: 15px;
+  }
+
+  .services-section {
+    padding: 20px 0;
+    margin-top: 15px;
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .services-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .testimonial-card {
+    padding: 18px;
+    border-radius: 6px;
+  }
+
+  .service-card {
+    height: 220px;
+    border-radius: 8px;
+  }
+
+  .testimonial-header {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonial-name {
+    font-size: 14px;
+  }
+
+  .testimonial-title {
+    font-size: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .stars {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,67 @@
+/* About Mission / Vision card styles - centered white card with subtle border */
+.about-mission-wrapper{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 16px;
+	box-sizing: border-box;
+}
+
+.about-mission-card{
+	width: 1300px;
+	max-width: calc(100% - 40px);
+	background: #ffffff;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.06);
+	box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+	display: flex;
+	gap: 0;
+	overflow: hidden;
+}
+
+.mission-column, .vision-column{
+	padding: 26px 34px;
+	box-sizing: border-box;
+	width: 50%;
+}
+
+.mission-heading{
+	margin: 0 0 12px 0;
+	font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	color: #111;
+}
+
+.mission-text p{
+	margin: 0 0 10px 0;
+	color: #333;
+	font-size: 12px;
+	line-height: 1.45;
+	text-align: left;
+}
+
+/* subtle inner padding panel look */
+.about-mission-card::after{
+	content: "";
+	position: absolute;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 900px){
+	.about-mission-card{ width: 760px }
+	.mission-text p{ font-size: 12px }
+}
+
+@media (max-width: 600px){
+	.about-mission-card{
+		flex-direction: column;
+		width: 100%;
+		max-width: 520px;
+	}
+	.mission-column, .vision-column{ width: 100%; padding: 18px }
+	.mission-heading{ font-size: 16px }
+	.mission-text p{ font-size: 12px }
+}
+

@@ -1,0 +1,146 @@
+/* Full screen parent container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px 10px;
+    box-sizing: border-box;
+}
+
+/* Your box */
+.box {
+    height: 200px;
+    width: 80%;
+    max-width: 1100px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.facility-1 {
+    height: 100px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.facility-1 h3 {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.imgs {
+    width: 35px;
+    height: 35px;
+}
+
+/* ========== MOBILE VIEW (< 480px) ========== */
+@media (max-width: 479px) {
+    .container {
+        padding: 15px 0;
+    }
+
+    .box {
+        height: auto;
+        width: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .facility-1 {
+        height: 80px;
+        width: 100%;
+        min-height: 80px;
+    }
+
+    .facility-1 h3 {
+        font-size: 12px;
+        margin: 8px 0 0 0;
+    }
+
+    .imgs {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* ========== TABLET VIEW (480px - 1024px) ========== */
+@media (min-width: 480px) and (max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .box {
+        height: auto;
+        width: 90%;
+        max-width: 900px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        justify-content: space-around;
+    }
+
+    .facility-1 {
+        height: 90px;
+        width: calc(50% - 10px);
+        min-height: 90px;
+    }
+
+    .facility-1 h3 {
+        font-size: 13px;
+        margin: 8px 0 0 0;
+    }
+
+    .imgs {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* ========== DESKTOP VIEW (> 1024px) ========== */
+@media (min-width: 1025px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .box {
+        height: 200px;
+        width: 80%;
+        max-width: 1100px;
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+
+    .facility-1 {
+        height: 100px;
+        width: 150px;
+    }
+
+    .facility-1 h3 {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+
+    .imgs {
+        width: 35px;
+        height: 35px;
+    }
+}

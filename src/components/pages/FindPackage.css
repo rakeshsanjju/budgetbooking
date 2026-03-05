@@ -1,0 +1,12 @@
+.findPackage{
+    display: flex;
+    flex-direction: row;
+}
+
+.findPackage-content{
+    width: 50%;
+}
+
+.findPackage-form{
+    width: 50%;
+}
