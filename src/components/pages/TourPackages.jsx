@@ -126,7 +126,7 @@ const TourPackages = () => {
                   Locations: <span>{pkg.locations}</span>
                 </p>
                 
-                <a href="#" className="view-details">View Details</a>
+                <a href="/" className="view-details">View Details</a>
                 
                 <div className="amenities">
                   {pkg.amenities.map((amenity, index) => (
