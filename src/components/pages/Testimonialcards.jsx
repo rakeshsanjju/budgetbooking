@@ -70,7 +70,7 @@ const TestimonialCards = () => (
             funny and detailed reports...
           </p>
 
-          <a className="read-more">Read More</a>
+          <a href="/" className="read-more">Read More</a>
 
         </div>
            <div className="review-card">
@@ -108,7 +108,7 @@ const TestimonialCards = () => (
             funny and detailed reports...
           </p>
 
-          <a className="read-more">Read More</a>
+          <a href="/" className="read-more">Read More</a>
 
         </div>
            <div className="review-card">
@@ -146,7 +146,7 @@ const TestimonialCards = () => (
             funny and detailed reports...
           </p>
 
-          <a className="read-more">Read More</a>
+          <a  href="/" className="read-more">Read More</a>
 
         </div>
            <div className="review-card">
@@ -184,7 +184,7 @@ const TestimonialCards = () => (
             funny and detailed reports...
           </p>
 
-          <a className="read-more">Read More</a>
+          <a href="/" className="read-more">Read More</a>
 
         </div>
       </div>
